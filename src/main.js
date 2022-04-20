@@ -23,6 +23,12 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
+// swiper slider
+import 'swiper/css';
+import '@ionic/vue/css/ionic-swiper.css';
+import "swiper/css/pagination";
+
 const app = createApp(App)
   .use(IonicVue)
   .use(router);

@@ -3,6 +3,12 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-background-color: #ffffff;
+	--ion-background-color-rgb: 255,255,255;
+
+	--ion-text-color: #000000;
+	--ion-text-color-rgb: 0,0,0;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -76,7 +82,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -233,4 +239,39 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
+}
+body {
+  color: #000000;
+}
+.navbar {
+  margin-top: 35px;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 2em;
+}
+.swiper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100% !important;
+  object-fit: cover !important;
+  height: 100% !important;
+}
+.title {
+  margin-top: 50px;
+  margin-left: 15px;
+  font-size: 1.5em;
+  font-weight: 400;
 }
